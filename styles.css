@@ -1,19 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f0f0f0;
+    color: #333;
 }
-h1 {
-    color: blue;
+
+header {
+    background-color: #005f6b;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    font-size: 36px;
-    text-shadow: 2px 2px 4px #888888;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-    margin-bottom: 20px;
 }
-div {
-    border: 1px solid #ccc;
-    padding: 10px;
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home {
+    background-image: url('https://source.unsplash.com/featured/?swimming,pool');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+#services .service {
     background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: calc(30% - 40px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
 }
