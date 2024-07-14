@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
-    color: #003366; /* Medium blue text */
+    color: #003366; /* Dark blue text */
 }
 
 header {
@@ -14,7 +14,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Allow positioning of the logo */
 }
 
 header h1 {
@@ -22,12 +21,13 @@ header h1 {
     font-size: 3em; /* Increase font size */
     font-family: 'Georgia', serif; /* Use a more attractive font */
     font-style: italic; /* Make the text italic */
+    margin-left: 10px; /* Adjust margin */
 }
 
 header img.logo {
-    width: 100px; /* Increase size of the logo */
+    width: 80px; /* Decrease size of the logo */
     height: auto;
-    margin-right: 20px;
+    margin-right: 10px; /* Adjust margin */
 }
 
 #main-menu {
@@ -48,7 +48,7 @@ header img.logo {
 }
 
 #main-menu ul li a {
-    color: #003366; /* Medium blue text */
+    color: #002147; /* Dark blue text */
     text-decoration: none;
     font-weight: bold;
 }
@@ -125,4 +125,9 @@ footer {
 footer a {
     color: #ffeb3b;
     text-decoration: none;
+}
+
+h2 {
+    color: #002147; /* Dark blue text */
+    margin-top: 0; /* Remove default margin */
 }
