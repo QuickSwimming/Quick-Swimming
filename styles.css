@@ -28,7 +28,7 @@ header img.logo {
     height: auto;
     position: absolute; /* Position the logo */
     top: 50%;
-    left: 15px; /* Adjust as necessary */
+    left: 10px; /* Adjust as necessary to move the logo more to the left */
     transform: translateY(-50%); /* Center the logo vertically */
 }
 
