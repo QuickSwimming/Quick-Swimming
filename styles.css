@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -11,6 +13,7 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    position: relative; /* Allow positioning of the logo */
 }
 
 header h1 {
@@ -21,8 +24,10 @@ header h1 {
 header img.logo {
     width: 50px;
     height: auto;
-    vertical-align: middle;
-    margin-right: 10px;
+    position: absolute; /* Position the logo */
+    top: 50%;
+    left: 20px; /* Adjust as necessary */
+    transform: translateY(-50%); /* Center the logo vertically */
 }
 
 nav ul {
@@ -89,4 +94,5 @@ footer {
 
 footer a {
     color: #ffeb3b;
-    text
+    text-decoration: none;
+}
