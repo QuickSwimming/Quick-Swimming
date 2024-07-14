@@ -1,4 +1,4 @@
-lbody {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -134,4 +134,8 @@ footer a {
 h2 {
     color: #002147; /* Dark blue text */
     margin-top: 0; /* Remove default margin */
+}
+
+.blue-text {
+    color: blue;
 }
