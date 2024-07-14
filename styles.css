@@ -1,4 +1,4 @@
-body {
+lbody {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -99,3 +99,39 @@ section {
 }
 
 #articles {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    color: #5b9bd5; /* Same light blue color as header background */
+}
+
+article {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+article h3 {
+    margin: 0;
+}
+
+article p {
+    margin: 10px 0 0;
+}
+
+footer {
+    background-color: #336699; /* Medium blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+h2 {
+    color: #002147; /* Dark blue text */
+    margin-top: 0; /* Remove default margin */
+}
