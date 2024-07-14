@@ -16,6 +16,12 @@ header {
     justify-content: center;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header h1 {
     margin: 0;
     font-size: 3em; /* Increase font size */
@@ -94,7 +100,7 @@ section {
     background-image: url('https://source.unsplash.com/featured/?swimming,pool');
     background-size: cover;
     background-position: center;
-    color: #003366; /* Darker blue for text in home section */
+    color: #5b9bd5; /* Lighter blue for text in home section */
     padding: 100px 20px;
 }
 
@@ -132,10 +138,10 @@ footer a {
 }
 
 h2 {
-    color: #002147; /* Dark blue text */
+    color: #5b9bd5; /* Light blue text */
     margin-top: 0; /* Remove default margin */
 }
 
 .blue-text {
-    color: blue;
+    color: #003366; /* Dark blue */
 }
