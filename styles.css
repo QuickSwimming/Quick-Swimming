@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
-    color: #333;
+    color: #002147; /* Dark blue text */
 }
 
 header {
@@ -56,7 +56,7 @@ section {
     background-image: url('https://source.unsplash.com/featured/?swimming,pool');
     background-size: cover;
     background-position: center;
-    color: dark blue;
+    color: white;
     padding: 100px 20px;
 }
 
@@ -89,5 +89,4 @@ footer {
 
 footer a {
     color: #ffeb3b;
-    text-decoration: none;
-}
+    text
