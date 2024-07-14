@@ -85,6 +85,8 @@ header img.logo {
 section {
     padding: 50px 20px;
     text-align: center;
+    color: #5b9bd5; /* Light blue text */
+}
 }
 
 #home {
