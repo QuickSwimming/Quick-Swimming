@@ -5,11 +5,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
-    color: #002147; /* Dark blue text */
+    color: #003366; /* Dark blue text */
 }
 
 header {
-    background-color: #003366; /* Dark blue */
+    background-color: #336699; /* medium blue */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -86,7 +86,7 @@ article p {
 }
 
 footer {
-    background-color: #336699; /* Medium blue */
+    background-color: #003366; /* dark blue */
     color: white;
     text-align: center;
     padding: 20px 0;
