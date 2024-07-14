@@ -21,10 +21,12 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -67,3 +69,4 @@ footer a {
     color: #ffeb3b;
     text-decoration: none;
 }
+
