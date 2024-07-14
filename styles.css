@@ -83,9 +83,9 @@ header img.logo {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 20px 20px; /* Adjust padding to bring it closer to main-menu */
     text-align: center;
-    color: #5b9bd5; /* Light blue, similar to header background */
+    color: #add8e6; /* Lighter blue */
     margin-top: 0; /* Remove default margin */
     margin-bottom: 20px; /* Adjust margin */
 }
@@ -94,7 +94,7 @@ section {
     background-image: url('https://source.unsplash.com/featured/?swimming,pool');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #add8e6; /* Lighter blue for text in home section */
     padding: 100px 20px;
 }
 
@@ -102,6 +102,7 @@ section {
     background-color: white;
     padding: 20px;
     margin: 20px 0;
+    color: #5b9bd5; /* Same light blue color as header background */
 }
 
 article {
