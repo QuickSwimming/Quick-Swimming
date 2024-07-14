@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #003366; /* Dark blue */
+    background-color: #5b9bd5; /* Light blue, slightly darker than body background */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -24,9 +24,6 @@ header h1 {
 header img.logo {
     width: 100px; /* Increase size of the logo */
     height: auto;
-    background-color: #add8e6; /* Light blue background for the logo */
-    padding: 20px; /* Add padding around the logo */
-    border-radius: 50%; /* Make the background circular */
     position: absolute; /* Position the logo */
     top: 50%;
     left: 20px; /* Adjust as necessary */
