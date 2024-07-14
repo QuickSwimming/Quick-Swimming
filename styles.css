@@ -85,7 +85,7 @@ header img.logo {
 section {
     padding: 20px 20px; /* Adjust padding to bring it closer to main-menu */
     text-align: center;
-    color: #add8e6; /* Lighter blue */
+    color: #5b9bd5; /* Lighter blue */
     margin-top: 0; /* Remove default margin */
     margin-bottom: 20px; /* Adjust margin */
 }
@@ -94,7 +94,7 @@ section {
     background-image: url('https://source.unsplash.com/featured/?swimming,pool');
     background-size: cover;
     background-position: center;
-    color: #add8e6; /* Lighter blue for text in home section */
+    color: #5b9bd5; /* Lighter blue for text in home section */
     padding: 100px 20px;
 }
 
