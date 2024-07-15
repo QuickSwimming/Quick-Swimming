@@ -85,7 +85,7 @@ section {
 }
 
 #articles {
-    background-color: #3498db; /* Blue */
+    background-color: rgba(52, 152, 219, 0.5); /* Blue with 50% opacity */
     color: #ffffff; /* White text */
     padding: 20px;
     margin: 20px 0;
@@ -117,7 +117,7 @@ section {
 }
 
 #article-content {
-    background-color: #ffffff; /* White */
+    background-color: #e0f7fa; /* Light blue */
     color: #333; /* Dark grey text */
     padding: 20px;
     margin-top: 20px;
