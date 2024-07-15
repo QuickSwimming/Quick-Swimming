@@ -68,60 +68,40 @@ nav ul li a:hover {
 section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #34495e; /* Dark blue */
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-                      linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px); /* Crosshatch effect */
-    background-size: 20px 20px; /* Size of crosshatch pattern */
-}
-
-#home {
-    background-image: url('https://source.unsplash.com/featured/?swimming,pool');
+    background-image: url('https://media.gettyimages.com/photos/swimmers-start-on-their-race-during-the-mens-100m-butterfly-final-at-picture-id585146020'); /* Image URL */
     background-size: cover;
     background-position: center;
     color: #ffffff; /* White text */
-    padding: 100px 20px;
-    background-blend-mode: multiply;
-    background-color: rgba(52, 152, 219, 0.8); /* Blue overlay */
+    position: relative;
+    z-index: 1;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 152, 219, 0.5); /* Blue overlay with 50% transparency */
+    z-index: -1;
 }
 
 #articles {
-    background-color: rgba(52, 152, 219, 0.5); /* Blue with 50% opacity */
-    color: #ffffff; /* White text */
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent background */
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-}
-
-#articles ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#articles ul li {
-    margin: 10px 0;
-}
-
-#articles ul li a {
-    color: #3498db; /* Blue */
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    padding: 10px;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-}
-
-#articles ul li a:hover {
-    background-color: #ecf0f1; /* Light grey */
+    color: #ffffff; /* White text */
 }
 
 #article-content {
-    background-color: #e0f7fa; /* Light blue */
-    color: #333; /* Dark grey text */
-    padding: 20px;
     margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
     border: 1px solid #ccc;
+    color: #ffffff; /* White text */
     text-align: left;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -129,7 +109,7 @@ section {
 
 #article-content h2 {
     font-size: 1.8em;
-    color: #3498db; /* Blue */
+    color: #1abc9c; /* Light green */
     margin-bottom: 20px;
 }
 
