@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #2d3e50; /* Dark blue-grey */
+    background-color: #8a6dbe; /* Light purple */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -24,6 +24,7 @@ header h1 {
     font-weight: 700;
     text-transform: uppercase;
     font-style: italic; /* Italic style */
+    font-family: 'Lobster', cursive; /* Lobster font */
 }
 
 header img.logo {
@@ -78,7 +79,7 @@ section {
     color: white;
     padding: 100px 20px;
     background-blend-mode: multiply;
-    background-color: rgba(45, 62, 80, 0.8); /* Overlay to make text readable */
+    background-color: rgba(138, 109, 190, 0.8); /* Light purple overlay */
 }
 
 #articles {
@@ -115,9 +116,9 @@ section {
 #article-content {
     margin-top: 20px;
     padding: 20px;
-    background-color: rgba(52, 152, 219, 0.1); /* Light blue with transparency */
+    background-color: #f2f2f2; /* Light grey background for article content */
     border: 1px solid #ccc;
-    color: #2c3e50; /* Dark blue-grey text */
+    color: #333; /* Dark grey text */
     text-align: left;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
