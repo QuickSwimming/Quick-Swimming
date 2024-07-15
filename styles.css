@@ -3,12 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* Light grey background for modern look */
+    background-color: #f7f9fc; /* Very light blue background */
     color: #333; /* Dark grey text */
 }
 
 header {
-    background-color: #2c3e50; /* Dark blue-grey */
+    background-color: #2d3e50; /* Dark blue-grey */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -34,7 +34,7 @@ header img.logo {
 nav {
     text-align: center;
     margin-top: 10px;
-    background-color: #34495e; /* Slightly lighter blue-grey */
+    background-color: #3e4a61; /* Slightly lighter blue-grey */
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -66,18 +66,17 @@ nav ul li a:hover {
 section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #ecf0f1; /* Light grey */
+    background-color: #ecf0f3; /* Light grey */
 }
 
 #home {
     background-image: url('https://source.unsplash.com/featured/?swimming,pool');
     background-size: cover;
     background-position: center;
-    color: #2c3e50; /* Dark blue-grey */
+    color: white;
     padding: 100px 20px;
     background-blend-mode: multiply;
-    background-color: rgba(44, 62, 80, 0.8); /* Overlay to make text readable */
-    color: white; /* White text for contrast */
+    background-color: rgba(45, 62, 80, 0.8); /* Overlay to make text readable */
 }
 
 #articles {
@@ -143,7 +142,7 @@ section {
 }
 
 footer {
-    background-color: #2c3e50; /* Dark blue-grey */
+    background-color: #2d3e50; /* Dark blue-grey */
     color: white;
     text-align: center;
     padding: 20px 0;
