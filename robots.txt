@@ -1,2 +1,19 @@
 User-agent: *
 Disallow:
+
+# Block specific directories if needed
+# Disallow: /private/
+# Disallow: /secret/
+
+# Block specific files if needed
+# Disallow: /scripts.js
+# Disallow: /styles.css
+
+# Allow Googlebot to access everything
+Allow: /
+
+# Set crawl delay if needed (in seconds)
+# Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://quickswimming.github.io/Quick-Swimming/sitemap.xml
