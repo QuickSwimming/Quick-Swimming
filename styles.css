@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: linear-gradient(to right, #ff0000, #ffffff); /* Gradasi merah putih */
-    color: #34495e; /* Dark blue text*/
+    background: linear-gradient(to right, #ff0000, #ffffff); /* Gradasi merah putih */
+    color: #34495e; /* Dark blue text */
     padding: 20px 0;
     text-align: center;
     display: flex;
