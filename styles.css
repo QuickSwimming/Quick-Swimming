@@ -100,25 +100,29 @@ section {
 #article-content {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgba(173, 216, 230, 0.8); /* Light blue with transparency */
     border: 1px solid #ccc;
     color: #002147; /* Dark blue text for article content */
+    text-align: left;
 }
 
-article {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
-
-article h3 {
-    margin: 0;
+#article-content h2 {
+    font-size: 1.8em;
     color: #002147; /* Dark blue */
 }
 
-article p {
-    margin: 10px 0 0;
-    color: #002147; /* Dark blue */
+#article-content p,
+#article-content ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+#article-content ul {
+    padding-left: 20px;
+}
+
+#article-content ul li {
+    margin-bottom: 10px;
 }
 
 footer {
