@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Quick Swimming Indonesia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Quick Swimming offers various swimming courses for beginners and professionals, including children, teenagers, adults, and seniors, both with and without special needs.">
+    <meta name="google-site-verification" content="PEAVzDXWxRNF7voQ7pgAWmvDn5yIaFABKdn3Z1TKj-g">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Load Article 1
-            $("#article1").load("articles/article1.html");
-            
-            // Load Article 2
-            $("#article2").load("articles/article2.html");
-            
-            // Load Article 3
-            $("#article3").load("articles/article3.html");
+            $("#load-article1").click(function() {
+                $("#article-content").load("articles/article1.html");
+            });
+            $("#load-article2").click(function() {
+                $("#article-content").load("articles/article2.html");
+            });
+            $("#load-article3").click(function() {
+                $("#article-content").load("articles/article3.html");
+            });
         });
     </script>
 </head>
@@ -40,24 +41,20 @@
     <section id="home">
         <h2>Welcome to Quick Swimming Indonesia</h2>
         <p>We offer various swimming courses for beginners and professionals, from children to adults, including those with special needs.</p>
-
-        <!-- Section for articles -->
+        
+        <!-- Article Links -->
         <div id="articles">
             <h2>Articles</h2>
-            <!-- Artikel 1 -->
-            <article id="article1">
-                <!-- Content will be loaded here -->
-            </article>
+            <ul>
+                <li><a href="#" id="load-article1">Kenapa Harus Les di Quick Swimming Indonesia</a></li>
+                <li><a href="#" id="load-article2">Pentingnya Olahraga Renang</a></li>
+                <li><a href="#" id="load-article3">Tips Memilih Tempat Belajar Renang yang Tepat</a></li>
+            </ul>
+        </div>
 
-            <!-- Artikel 2 -->
-            <article id="article2">
-                <!-- Content will be loaded here -->
-            </article>
-
-            <!-- Artikel 3 -->
-            <article id="article3">
-                <!-- Content will be loaded here -->
-            </article>
+        <!-- Article Content -->
+        <div id="article-content">
+            <!-- Content will be loaded here -->
         </div>
     </section>
 
