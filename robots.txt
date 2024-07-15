@@ -4,11 +4,15 @@ Disallow:
 # Allow Googlebot to access all resources
 Allow: /
 
-# Example: Allow specific files
+# Allow specific files
 Allow: /scripts.js
 Allow: /styles.css
+Allow: /png_20230706_195346_0000.png  # Contoh untuk gambar tertentu
 
-# Example: Disallow specific directories
+# Allow access to images from external source (Unsplash)
+Allow: /featured/?swimming,pool
+
+# Example: Disallow specific directories if needed
 # Disallow: /private/
 # Disallow: /secret/
 
