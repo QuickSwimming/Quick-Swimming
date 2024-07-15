@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #3498db; /* Blue */
-    color: #ffffff; /* White text */
+    color: #336699; /* White text */
     padding: 20px 0;
     text-align: center;
     display: flex;
@@ -27,10 +27,9 @@ header h1 {
 }
 
 header img.logo {
-    width: 50px;
+    width: 70px;
     height: auto;
     margin-right: 10px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%); /* Blue logo */
 }
 
 nav {
