@@ -3,20 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
-    color: #003366; /* Dark blue text */
+    color: #002147; /* Dark blue text */
 }
 
 header {
-    background-color: #5b9bd5; /* Light blue, slightly darker than body background */
+    background-color: #336699; /* Slightly darker blue for header */
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,91 +18,61 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 3em; /* Increase font size */
-    font-family: 'Georgia', serif; /* Use a more attractive font */
-    font-style: italic; /* Make the text italic */
-    margin-left: 10px; /* Adjust margin */
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif;
+    font-style: italic; /* Slightly italic */
 }
 
 header img.logo {
-    width: 80px; /* Decrease size of the logo */
+    width: 50px;
     height: auto;
-    margin-right: 10px; /* Adjust margin */
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
-#main-menu {
+nav {
     margin: 20px 0;
     text-align: center;
 }
 
-#main-menu ul {
+nav ul {
     list-style: none;
     padding: 0;
-    display: inline-block;
-    margin: 0;
+    display: inline-flex;
+    justify-content: center;
 }
 
-#main-menu ul li {
-    display: inline;
+nav ul li {
     margin: 0 15px;
 }
 
-#main-menu ul li a {
+nav ul li a {
     color: #002147; /* Dark blue text */
     text-decoration: none;
     font-weight: bold;
 }
 
-#main-menu ul li a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-#search {
-    margin: 20px 0;
-    text-align: center;
-}
-
-#search input[type="text"] {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#search button {
-    padding: 10px;
-    background-color: #5b9bd5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#search button:hover {
-    background-color: #003366;
-}
-
 section {
-    padding: 20px 20px; /* Adjust padding to bring it closer to main-menu */
+    padding: 50px 20px;
     text-align: center;
-    color: #5b9bd5; /* Lighter blue */
-    margin-top: 0; /* Remove default margin */
-    margin-bottom: 20px; /* Adjust margin */
 }
 
 #home {
     background-image: url('https://source.unsplash.com/featured/?swimming,pool');
     background-size: cover;
     background-position: center;
-    color: #5b9bd5; /* Lighter blue for text in home section */
+    color: white;
     padding: 100px 20px;
 }
 
 #articles {
-    background-color: white;
+    background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
     padding: 20px;
     margin: 20px 0;
-    color: #5b9bd5; /* Same light blue color as header background */
 }
 
 article {
@@ -135,13 +99,4 @@ footer {
 footer a {
     color: #ffeb3b;
     text-decoration: none;
-}
-
-h2 {
-    color: #5b9bd5; /* Light blue text */
-    margin-top: 0; /* Remove default margin */
-}
-
-.blue-text {
-    color: #003366; /* Dark blue */
 }
