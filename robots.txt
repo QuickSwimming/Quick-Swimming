@@ -10,7 +10,7 @@ Allow: /styles.css
 Allow: /png_20230706_195346_0000.png  # Contoh untuk gambar tertentu
 
 # Allow access to images from external source (Unsplash)
-Allow: /featured/?swimming,pool
+Allow: https://source.unsplash.com/featured/?swimming,pool
 
 # Example: Disallow specific directories if needed
 # Disallow: /private/
