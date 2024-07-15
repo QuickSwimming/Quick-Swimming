@@ -22,9 +22,7 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
     font-weight: bold;
-    font-style: italic;
     font-family: 'Merriweather', serif; /* Merriweather font */
-    transform: rotate(-5deg); /* Rotate text slightly */
 }
 
 header img.logo {
@@ -69,7 +67,10 @@ nav ul li a:hover {
 section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #ecf0f1; /* Light grey */
+    background-color: #3498db; /* Blue */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px); /* Crosshatch effect */
+    background-size: 20px 20px; /* Size of crosshatch pattern */
 }
 
 #home {
@@ -83,7 +84,7 @@ section {
 }
 
 #articles {
-    background-color: #ffffff; /* White background */
+    background-color: #f2f2f2; /* Light grey */
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -116,7 +117,7 @@ section {
 #article-content {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f2f2f2; /* Light grey */
+    background-color: #ffffff; /* White */
     border: 1px solid #ccc;
     color: #333; /* Dark grey text */
     text-align: left;
