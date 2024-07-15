@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: #34495e; /* Dark blue */
-    color: #ffffff; /* White text */
+    background-color: #f0f5f9; /* Light blue background */
+    color: #34495e; /* Dark blue text*/
     padding: 20px 0;
     text-align: center;
     display: flex;
@@ -26,10 +26,10 @@ header h1 {
 }
 
 header img.logo {
-    width: 50px;
+    width: 70px;
     height: auto;
     margin-right: 10px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%); /* Blue logo */
+    /* No filter applied to retain original logo color */
 }
 
 nav {
@@ -151,4 +151,10 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Shadow on
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Shadow on top edge */
+}
+
+footer a {
+    color: #1abc9c; /* Light green */
+    text-decoration: none;
+}
