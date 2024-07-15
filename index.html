@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Swimming Indonesia</title>
-    <meta name="description" content="Quick Swimming offers various swimming courses for beginners and professionals, including children, teenagers, adults, and seniors, both with and without special needs.">
-    <meta name="google-site-verification" content="PEAVzDXWxRNF7voQ7pgAWmvDn5yIaFABKdn3Z1TKj-g">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Load Article 1
+            $("#article1").load("articles/article1.html");
+            
+            // Load Article 2
+            $("#article2").load("articles/article2.html");
+            
+            // Load Article 3
+            $("#article3").load("articles/article3.html");
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -26,60 +39,24 @@
 
     <section id="home">
         <h2>Welcome to Quick Swimming Indonesia</h2>
-        <p style="color: blue;">We offer various swimming courses for beginners and professionals, from children to adults, including those with special needs.</p>
+        <p>We offer various swimming courses for beginners and professionals, from children to adults, including those with special needs.</p>
 
         <!-- Section for articles -->
         <div id="articles">
             <h2>Articles</h2>
             <!-- Artikel 1 -->
-            <article>
-                <h3><a href="#article1">Tips Belajar Berenang untuk Pemula</a></h3>
-                <p>Berenang adalah keterampilan penting yang bermanfaat untuk kesehatan dan keselamatan. Berikut beberapa tips untuk pemula yang ingin belajar berenang.</p>
-                <div>
-                    Berenang adalah keterampilan penting yang bermanfaat untuk kesehatan dan keselamatan. Bagi pemula, memulai bisa terasa menakutkan, tetapi dengan tips yang tepat, Anda dapat dengan cepat merasa nyaman di dalam air. Berikut beberapa tips untuk pemula yang ingin belajar berenang:
-                    <ul>
-                        <li><strong>Mulailah dengan Posisi yang Benar:</strong> Pastikan tubuh Anda sejajar dengan permukaan air. Kepala harus berada dalam posisi netral, tidak terlalu tinggi atau rendah.</li>
-                        <li><strong>Belajar Mengapung:</strong> Mengapung adalah dasar dari semua teknik berenang. Latih mengapung di punggung dan perut untuk membangun kepercayaan diri.</li>
-                        <li><strong>Pernapasan yang Tepat:</strong> Latih pernapasan yang benar dengan menghirup udara melalui mulut dan menghembuskannya melalui hidung atau mulut saat wajah Anda berada di dalam air.</li>
-                        <li><strong>Pelajari Teknik Dasar:</strong> Mulailah dengan gaya dada atau gaya bebas yang sederhana. Fokus pada gerakan lengan dan kaki yang benar.</li>
-                        <li><strong>Gunakan Alat Bantu:</strong> Alat bantu seperti papan renang atau pelampung dapat membantu Anda merasa lebih aman dan stabil saat belajar.</li>
-                    </ul>
-                    Dengan latihan rutin dan kesabaran, Anda akan segera merasa nyaman di dalam air dan menikmati manfaat berenang.
-                </div>
+            <article id="article1">
+                <!-- Content will be loaded here -->
             </article>
 
             <!-- Artikel 2 -->
-            <article>
-                <h3><a href="#article2">Manfaat Berenang untuk Kesehatan</a></h3>
-                <p>Berenang adalah olahraga yang menyenangkan dan memiliki banyak manfaat untuk kesehatan. Berikut beberapa manfaat utama berenang.</p>
-                <div>
-                    Berenang adalah olahraga yang menyenangkan dan memiliki banyak manfaat untuk kesehatan. Berikut beberapa manfaat utama berenang:
-                    <ul>
-                        <li><strong>Meningkatkan Kesehatan Jantung:</strong> Berenang adalah latihan kardiovaskular yang efektif, membantu meningkatkan kesehatan jantung dan sirkulasi darah.</li>
-                        <li><strong>Menguatkan Otot dan Tulang:</strong> Gerakan berenang melibatkan banyak kelompok otot, membantu menguatkan otot dan tulang.</li>
-                        <li><strong>Menurunkan Stres:</strong> Berenang dapat membantu mengurangi stres dan meningkatkan suasana hati. Sensasi terapung di air memberikan rasa rileks dan menenangkan.</li>
-                        <li><strong>Meningkatkan Fleksibilitas:</strong> Gerakan berenang membantu meningkatkan fleksibilitas tubuh, terutama di bagian bahu, pinggul, dan kaki.</li>
-                        <li><strong>Membakar Kalori:</strong> Berenang adalah cara yang baik untuk membakar kalori dan menjaga berat badan yang sehat.</li>
-                    </ul>
-                    Dengan berenang secara rutin, Anda dapat menikmati berbagai manfaat kesehatan ini dan meningkatkan kualitas hidup Anda.
-                </div>
+            <article id="article2">
+                <!-- Content will be loaded here -->
             </article>
 
             <!-- Artikel 3 -->
-            <article>
-                <h3><a href="#article3">Teknik Berenang Gaya Bebas</a></h3>
-                <p>Gaya bebas adalah salah satu teknik berenang yang paling populer dan efektif. Pelajari langkah-langkah untuk menguasai gaya bebas dengan benar.</p>
-                <div>
-                    Gaya bebas adalah salah satu teknik berenang yang paling populer dan efektif. Teknik ini memungkinkan Anda berenang dengan kecepatan dan efisiensi yang tinggi. Berikut adalah langkah-langkah untuk menguasai gaya bebas dengan benar:
-                    <ul>
-                        <li><strong>Posisi Tubuh:</strong> Tubuh harus sejajar dengan permukaan air. Kepala dalam posisi netral dengan mata menghadap ke bawah.</li>
-                        <li><strong>Gerakan Kaki:</strong> Gerakan kaki gaya bebas melibatkan tendangan dari pinggul, bukan dari lutut. Pertahankan kaki lurus dengan sedikit fleksi di pergelangan kaki.</li>
-                        <li><strong>Gerakan Lengan:</strong> Gerakan lengan dimulai dengan tangan masuk ke dalam air di depan bahu, kemudian tarik tangan ke bawah dan ke belakang hingga keluar dari air di dekat paha.</li>
-                        <li><strong>Pernapasan:</strong> Putar kepala ke samping untuk mengambil napas saat satu tangan keluar dari air. Ganti sisi pernapasan untuk menjaga keseimbangan.</li>
-                        <li><strong>Koordinasi:</strong> Latih koordinasi antara gerakan lengan, kaki, dan pernapasan untuk mencapai gaya berenang yang halus dan efisien.</li>
-                    </ul>
-                    Dengan latihan dan bimbingan yang tepat, Anda dapat menguasai teknik gaya bebas dan menikmati berenang dengan lebih baik.
-                </div>
+            <article id="article3">
+                <!-- Content will be loaded here -->
             </article>
         </div>
     </section>
