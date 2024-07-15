@@ -1,134 +1,66 @@
-/* Reset default styles and apply global styles */
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Quick Swimming Indonesia</title>
+    <meta name="description" content="Quick Swimming offers various swimming courses for beginners and professionals, including children, teenagers, adults, and seniors, both with and without special needs.">
+    <meta name="google-site-verification" content="PEAVzDXWxRNF7voQ7pgAWmvDn5yIaFABKdn3Z1TKj-g">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#load-article1").click(function() {
+                $("#article-content").load("article1.html");
+            });
+            $("#load-article2").click(function() {
+                $("#article-content").load("article2.html");
+            });
+            $("#load-article3").click(function() {
+                $("#article-content").load("article3.html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/QuickSwimming/Quick-Swimming/main/png_20230706_195346_0000.png" alt="Quick Swimming Logo" class="logo">
+        <h1>Quick Swimming Indonesia</h1>
+    </header>
 
-/* Global styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
-    color: #002147; /* Dark blue text */
-}
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="coaches.html">Coaches</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-header {
-    background-color: #4682b4; /* Light steel blue */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    <section id="home">
+        <h2>Welcome to Quick Swimming Indonesia</h2>
+        <p>We offer various swimming courses for beginners and professionals, from children to adults, including those with special needs.</p>
+        
+        <!-- Article Links -->
+        <div id="articles">
+            <h2>Articles</h2>
+            <ul>
+                <li><a href="#" id="load-article1">Kenapa Harus Les di Quick Swimming Indonesia</a></li>
+                <li><a href="#" id="load-article2">Pentingnya Olahraga Renang</a></li>
+                <li><a href="#" id="load-article3">Tips Memilih Tempat Belajar Renang yang Tepat</a></li>
+            </ul>
+        </div>
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-style: italic;
-}
+        <!-- Article Content -->
+        <div id="article-content">
+            <!-- Content will be loaded here -->
+        </div>
+    </section>
 
-header img.logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
-nav {
-    text-align: center;
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #002147; /* Dark blue */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #87ceeb; /* Sky blue */
-}
-
-#home {
-    background-image: url('https://source.unsplash.com/featured/?swimming,pool');
-    background-size: cover;
-    background-position: center;
-    color: #4682b4; /* Light steel blue */
-    padding: 100px 20px;
-}
-
-#articles {
-    background-color: #4682b4; /* Light steel blue */
-    padding: 20px;
-    margin: 20px 0;
-    color: white;
-}
-
-#articles ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#articles ul li {
-    margin: 10px 0;
-}
-
-#articles ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#articles ul li a:hover {
-    text-decoration: underline;
-}
-
-#article-content {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    color: #002147; /* Dark blue text for article content */
-}
-
-article {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
-
-article h3 {
-    margin: 0;
-    color: #002147; /* Dark blue */
-}
-
-article p {
-    margin: 10px 0 0;
-    color: #002147; /* Dark blue */
-}
-
-footer {
-    background-color: #336699; /* Medium blue */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #ffeb3b;
-    text-decoration: none;
-}
+    <footer>
+        <p>Contact us at <a href="mailto:info@quickswimming.com">info@quickswimming.com</a></p>
+        <p>&copy; 2024 Quick Swimming</p>
+    </footer>
+</body>
+</html>
