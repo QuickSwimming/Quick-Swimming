@@ -23,7 +23,7 @@ a {
 
 /* Header styles */
 header {
-    background: linear-gradient(to bottom right, #1e90ff, #ffffff, #ff0000);
+    background-color: #87ceeb; /* Warna biru langit */
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
@@ -50,6 +50,7 @@ header {
     text-align: right;
     flex: 1;
     margin-right: 20px; /* Space between menu icon and edge of screen */
+    position: relative; /* Added for positioning dropdown */
 }
 
 .header-right button#menu-toggle {
@@ -107,12 +108,19 @@ header {
     border-radius: 5px;
 }
 
+#menu-toggle {
+    display: none; /* Hidden by default */
+}
+
 #dropdown-menu {
     display: none;
     position: absolute;
     background-color: #f0f6f9;
     border: 1px solid #c1d5e0;
     z-index: 1000;
+    top: 100%; /* Position dropdown below menu */
+    left: 50%;
+    transform: translateX(-50%); /* Center dropdown under menu icon */
 }
 
 #dropdown-menu ul {
