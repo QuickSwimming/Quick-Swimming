@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Nunito', 'Courier New', monospace;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #ffffff, #001f3f); /* Gradasi dari putih ke biru gelap */
@@ -8,13 +8,13 @@ body {
 }
 
 header {
-    background-color: #004d99; /* Dark blue background */
-    color: #ffffff; /* White text */
+    background-color: #66bb6a; /* Terang hijau */
+    color: #ffffff; /* Putih teks */
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
 }
 
 header .header-left {
@@ -26,8 +26,6 @@ header h1 {
     margin: 0;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: 'Merriweather', serif; /* Merriweather font */
-    font-style: italic; /* Italic */
 }
 
 header .header-right {
@@ -37,32 +35,31 @@ header .header-right {
 }
 
 #menu-toggle {
-    background-color: transparent; /* Transparent background */
+    background-color: transparent; /* Latar belakang transparan */
     border: none;
-    color: #ffffff; /* White text */
-    font-size: 1.5em; /* Larger font for the icon */
+    color: #ffffff; /* Putih teks */
+    font-size: 1em; /* Ukuran font */
     cursor: pointer;
+    margin-right: 10px; /* Jarak dari kanan ikon pencarian */
 }
 
 #dropdown-menu {
-    display: none; /* Hidden by default */
+    display: none; /* Sembunyikan secara default */
     position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #e6f7ff; /* Light blue background */
-    color: #004d99; /* Dark blue text */
+    top: calc(100% + 10px); /* Letakkan di bawah header */
+    left: 0;
+    background-color: #e6f7ff; /* Latar belakang biru muda */
+    color: #004d99; /* Teks biru gelap */
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
     z-index: 1000;
+    width: 150px; /* Sesuaikan lebar sesuai kebutuhan */
 }
 
 #dropdown-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    text-align: left;
 }
 
 #dropdown-menu ul li {
@@ -70,27 +67,31 @@ header .header-right {
 }
 
 #dropdown-menu ul li a {
-    color: #004d99; /* Dark blue */
+    color: #004d99; /* Teks biru gelap */
     text-decoration: none;
     font-weight: bold;
+    display: block;
     padding: 5px 10px;
-    border-radius: 3px;
 }
 
 #dropdown-menu ul li a:hover {
-    background-color: #4db6ac; /* Light teal */
-    color: #ffffff; /* White text */
+    background-color: #4db6ac; /* Teal muda */
+    color: #ffffff; /* Putih teks */
 }
 
 .search-icon {
-    margin-left: 15px;
+    margin-left: auto; /* Geser ke kanan */
+    color: #ffffff; /* Putih teks */
+    font-size: 1.5em; /* Ukuran font lebih besar */
+    text-decoration: none;
 }
 
 #top-logo {
     text-align: center;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; /* Latar belakang putih */
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    margin-top: 20px; /* Spasi dari header */
 }
 
 #top-logo .main-logo {
@@ -103,58 +104,5 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e6f7ff; /* Light blue background */
-    color: #004d99; /* Dark blue text */
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #004d99; /* Dark blue */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #4db6ac; /* Light teal */
-}
-
-section#home {
-    background-color: #e6f7ff; /* Light blue background */
-    padding: 40px 20px;
-    text-align: center;
-}
-
-section#articles {
-    background-color: #ffffff; /* White background */
-    padding: 40px 20px;
-}
-
-#article-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#article-list article {
-    background-color: #f5f5f5; /* Light grey background */
-    border: 1px solid #ddd; /* Light grey border */
-    margin: 10px;
-    padding: 20px;
-    width: calc(33% - 40px); /* 3
+    background-color: #e6f7ff; /* Latar belakang biru muda */
+    color: #004d99; /* Teks biru gelap */
