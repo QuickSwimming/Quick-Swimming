@@ -57,30 +57,6 @@ header {
     margin-left: 10px;
 }
 
-/* Dropdown menu styles */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #f0f6f9;
-    border: 1px solid #c1d5e0;
-    z-index: 1000;
-    width: 200px;
-    padding: 10px;
-    text-align: left;
-}
-
-.dropdown-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-menu ul li {
-    padding: 10px 0;
-}
-
 /* Logo and menu styles */
 .logo-menu-container {
     background-color: #f0f6f9;
@@ -117,6 +93,24 @@ header {
 #body-nav ul li a:hover {
     background-color: #d9e8f2;
     border-radius: 5px;
+}
+
+#dropdown-menu-body {
+    display: none;
+    position: absolute;
+    background-color: #f0f6f9;
+    border: 1px solid #c1d5e0;
+    z-index: 1000;
+    top: 150px; /* Adjust the position of the dropdown */
+    left: 50%; /* Position dropdown below the menu */
+    transform: translateX(-50%); /* Center the dropdown */
+    padding: 10px;
+    width: 200px;
+}
+
+#dropdown-menu-body li {
+    list-style-type: none;
+    padding: 10px 0;
 }
 
 /* Section and articles styles */
@@ -161,11 +155,4 @@ footer {
     background-color: #87ceeb; /* Warna biru langit */
     padding: 20px;
     font-family: 'Nunito', sans-serif;
-    font-size: 0.9rem;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icon {
+    font-size: 0.9rem
