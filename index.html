@@ -73,27 +73,27 @@
 
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
-            var nav = document.getElementById('main-nav');
-            if (nav.style.display === 'block') {
-                nav.style.display = 'none';
+            var subNav = document.getElementById('sub-nav');
+            if (subNav.style.display === 'block') {
+                subNav.style.display = 'none';
             } else {
-                nav.style.display = 'block';
+                subNav.style.display = 'block';
             }
         });
 
-        // Ensure menu is always visible under the logo
+        // Ensure sub menu is always visible under the logo
         window.addEventListener('resize', function() {
-            var nav = document.getElementById('main-nav');
+            var subNav = document.getElementById('sub-nav');
             if (window.innerWidth >= 768) {
-                nav.style.display = 'flex';
+                subNav.style.display = 'flex';
             } else {
-                nav.style.display = 'none';
+                subNav.style.display = 'none';
             }
         });
 
-        // Initial check to set menu visibility
+        // Initial check to set sub menu visibility
         if (window.innerWidth >= 768) {
-            document.getElementById('main-nav').style.display = 'flex';
+            document.getElementById('sub-nav').style.display = 'flex';
         }
     </script>
 </body>
