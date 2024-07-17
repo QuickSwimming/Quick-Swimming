@@ -20,7 +20,6 @@
 
     <div id="top-logo">
         <img src="https://raw.githubusercontent.com/QuickSwimming/Quick-Swimming/main/png_20230706_195346_0000.png" alt="Quick Swimming Logo" class="main-logo">
-        <h1 translate="no" class="italic"><span class="highlight">uick Swimming Indonesia</span></h1>
         <h2 translate="no" class="italic">Quick Swimming Indonesia</h2>
     </div>
 
@@ -71,6 +70,21 @@
                 nav.style.display = 'block';
             }
         });
+
+        // Ensure menu is always visible under the logo
+        window.addEventListener('resize', function() {
+            var nav = document.getElementById('main-nav');
+            if (window.innerWidth >= 768) {
+                nav.style.display = 'flex';
+            } else {
+                nav.style.display = 'none';
+            }
+        });
+
+        // Initial check to set menu visibility
+        if (window.innerWidth >= 768) {
+            document.getElementById('main-nav').style.display = 'flex';
+        }
     </script>
 </body>
 </html>
