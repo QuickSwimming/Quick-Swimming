@@ -14,6 +14,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     font-weight: bold;
+    text-align: center;
 }
 
 a {
@@ -82,9 +83,8 @@ header {
     background-color: #f0f6f9;
     border: 1px solid #c1d5e0;
     z-index: 1000;
-    top: 100%; /* Position dropdown below menu */
-    left: 50%;
-    transform: translateX(-50%); /* Center dropdown under menu icon */
+    top: 50px; /* Adjust the position of the dropdown */
+    right: 10px; /* Position dropdown to the right of the menu */
 }
 
 #dropdown-menu ul {
@@ -106,24 +106,17 @@ header {
     border-radius: 10px;
 }
 
-#article-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#dropdown-articles {
+    margin-top: 20px;
 }
 
-article {
-    width: 30%;
-    margin-bottom: 20px;
+#dropdown-articles select {
     padding: 10px;
-    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    max-width: 100%;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-article h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
 }
 
 /* Footer styles */
@@ -136,37 +129,12 @@ footer {
 }
 
 .social-icons {
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-.social-icon {
-    margin: 0 5px;
-}
-
-@media only screen and (max-width: 768px) {
-    .header-top {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-left,
-    .header-right {
-        margin-top: 0;
-    }
-
-    .header-right {
-        margin-bottom: 10px; /* Penyesuaian jarak menu dari atas */
-    }
-
-    #main-nav ul {
-        flex-direction: column;
-    }
-
-    #main-nav ul li {
-        margin: 5px 0;
-    }
-
-    #dropdown-menu {
-        top: 100%; /* Position dropdown below menu */
-    }
+.social-icon img {
+    width: 30px;
+    height: 30px;
 }
