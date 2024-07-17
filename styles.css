@@ -30,7 +30,7 @@ header {
     position: relative;
     z-index: 1000;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,20 +41,15 @@ header {
     align-items: center;
 }
 
-.header-left {
-    margin-top: 10px; /* Penyesuaian jarak logo dari atas */
+.header-left h1 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #00008b; /* Dark blue color */
+    margin: 0;
 }
 
-.header-left img {
-    max-width: 200px;
-    height: auto;
-}
-
-.header-right {
-    margin-top: 10px; /* Penyesuaian jarak menu dari atas */
-}
-
-#main-nav ul {
+.header-right nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -62,17 +57,17 @@ header {
     justify-content: center;
 }
 
-#main-nav ul li {
+.header-right nav ul li {
     margin: 0 10px;
 }
 
-#main-nav ul li a {
+.header-right nav ul li a {
     display: block;
     padding: 10px 15px;
     color: #333333;
 }
 
-#main-nav ul li a:hover {
+.header-right nav ul li a:hover {
     background-color: #d9e8f2;
     border-radius: 5px;
 }
@@ -85,19 +80,16 @@ header {
     z-index: 1000;
     top: 50px; /* Adjust the position of the dropdown */
     right: 10px; /* Position dropdown to the right of the menu */
-}
-
-#dropdown-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#dropdown-menu ul li {
     padding: 10px;
+    width: 200px;
 }
 
-/* Sections and articles styles */
+#dropdown-menu li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+/* Section and articles styles */
 .section {
     text-align: center;
     background: linear-gradient(to bottom, #ffffff, #c1d5e0);
@@ -119,22 +111,100 @@ header {
     border-radius: 5px;
 }
 
+/* Logo and menu styles */
+.logo-body {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#body-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#body-nav ul li {
+    margin: 0 10px;
+}
+
+#body-nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333333;
+}
+
+#body-nav ul li a:hover {
+    background-color: #d9e8f2;
+    border-radius: 5px;
+}
+
+#dropdown-menu-body {
+    display: none;
+    position: absolute;
+    background-color: #f0f6f9;
+    border: 1px solid #c1d5e0;
+    z-index: 1000;
+    top: 150px; /* Adjust the position of the dropdown */
+    left: 50%; /* Position dropdown below the menu */
+    transform: translateX(-50%); /* Center the dropdown */
+    padding: 10px;
+    width: 200px;
+}
+
+#dropdown-menu-body li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
 /* Footer styles */
 footer {
-    background-color: #3498db;
-    color: white;
-    text-align: center;
+    background-color: #87ceeb; /* Warna biru langit */
     padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .social-icon {
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 10px 0;
     font-family: 'Nunito', sans-serif;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.social-icon img {
-    width: 30px;
-    height: 30px;
+    .header-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-right nav ul {
+        justify-content: flex-end;
+    }
+
+    #dropdown-menu {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    #dropdown-menu-body {
+        top: 100px;
+    }
 }
