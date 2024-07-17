@@ -24,7 +24,7 @@ a {
 
 /* Header styles */
 header {
-    background-color: #00008b; /* Dark blue color */
+    background-color: #87ceeb; /* Warna biru langit */
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
@@ -38,7 +38,7 @@ header {
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: bold;
-    color: #ffffff; /* white*/
+    color: #00008b; /* Dark blue color */
     margin: 0;
     font-size: 2rem; /* Header font size should be the largest */
 }
@@ -152,7 +152,7 @@ article p {
 
 /* Footer styles */
 footer {
-    background-color: #00008b; /* Dark blue color */
+    background-color: #87ceeb; /* Warna biru langit */
     padding: 20px;
     font-family: 'Nunito', sans-serif;
     font-size: 0.9rem
