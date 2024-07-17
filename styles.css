@@ -62,6 +62,13 @@ header .header-right {
     vertical-align: middle;
 }
 
+#top-logo h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #004d99; /* Dark blue */
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -140,19 +147,3 @@ nav ul li.search-icon a {
 #sub-nav ul li a:hover {
     background-color: #4db6ac; /* Light teal */
     color: #ffffff; /* White text */
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-    color: #333; /* Dark grey text */
-    background: #ffffff; /* White background */
-}
-
-#articles #article-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#articles article {
