@@ -5,129 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-            text-align: center; /* Memastikan konten ditengah pada tampilan desktop */
-        }
-        header {
-            background: linear-gradient(to bottom right, #1e90ff, #ffffff, #ff0000); /* Gradasi warna pada header */
-            padding: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: relative; /* Menambahkan posisi relatif untuk memposisikan menu dropdown */
-            z-index: 1000; /* Menentukan urutan tampilan */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header-left {
-            text-align: left; /* Aligment teks ke kiri pada header */
-        }
-        .header-left h1 {
-            font-family: 'Merriweather', serif;
-            font-style: italic;
-            font-size: 1.8rem;
-            margin: 0;
-            color: white; /* Warna teks putih */
-        }
-        .header-right {
-            text-align: right; /* Aligment teks ke kanan pada header */
-        }
-        .header-right button#menu-toggle {
-            background-color: transparent;
-            border: none;
-            font-size: 1.5rem;
-            color: white;
-            cursor: pointer;
-        }
-        .header-right a.search-icon {
-            margin-left: 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 1.4rem;
-        }
-        .main-logo {
-            max-width: 200px; /* Sesuaikan ukuran logo sesuai kebutuhan */
-        }
-        #main-nav {
-            background-color: #f0f6f9; /* Warna latar belakang menu */
-            border-top: 2px solid #c1d5e0; /* Garis tepi atas */
-            border-bottom: 2px solid #c1d5e0; /* Garis tepi bawah */
-            display: none; /* Menu dropdown disembunyikan secara default */
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 60px; /* Jarak dari header */
-            z-index: 999; /* Menentukan urutan tampilan */
-        }
-        #main-nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #main-nav ul li {
-            margin: 0 10px;
-        }
-        #main-nav ul li a {
-            text-decoration: none;
-            color: #333333;
-            padding: 10px 15px;
-            display: block;
-        }
-        #main-nav ul li a:hover {
-            background-color: #d9e8f2; /* Warna latar belakang saat hover */
-            border-radius: 5px;
-        }
-        #menu-toggle {
-            display: none; /* Tombol menu tidak ditampilkan pada desktop */
-        }
-        #dropdown-menu {
-            display: none; /* Submenu juga disembunyikan secara default */
-            position: absolute;
-            background-color: #f0f6f9; /* Warna latar belakang submenu */
-            border: 1px solid #c1d5e0; /* Garis tepi submenu */
-            z-index: 1000;
-        }
-        #dropdown-menu ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        #dropdown-menu ul li {
-            padding: 10px;
-        }
-        #home, #articles {
-            text-align: center; /* Pusatkan konten pada section dan artikel */
-            background: linear-gradient(to bottom, #ffffff, #c1d5e0); /* Gradasi dari putih ke biru muda soft */
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #3498db; /* Warna latar belakang footer */
-            color: white; /* Warna teks putih */
-            text-align: center;
-            padding: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-        .social-icons {
-            margin-bottom: 10px;
-        }
-        .social-icon {
-            margin: 0 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Memuat CSS eksternal -->
     <title>Quick Swimming Indonesia</title>
     <meta name="description" content="Quick Swimming menawarkan berbagai kursus renang untuk pemula dan profesional di Indonesia.">
 </head>
 <body>
     <header>
         <div class="header-left">
-            <h1>Quick Swimming</h1>
+            <h1>Quick Swimming Indonesia</h1>
         </div>
         <div class="header-right">
             <button id="menu-toggle">&#9776;</button>
@@ -182,13 +67,14 @@
         <div class="social-icons">
             <a href="mailto:info@quickswimming.com" class="social-icon"><img src="email-icon.png" alt="Email"></a>
             <a href="https://facebook.com/quickswimming" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://instagram.com/quickswimming" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://maps.google.com/quickswimming" class="social-icon"><img src="maps-icon.png" alt="Maps"></a>
-            <a href="https://wa.me/quickswimming" class="social-icon"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="https://instagram.com/quick_swimming_indonesia" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://maps.google.com/quick swimming indonesia" class="social-icon"><img src="maps-icon.png" alt="Maps"></a>
+            <a href="https://wa.me/083807065277" class="social-icon"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
             <a href="https://youtube.com/quickswimming" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
         </div>
-        <p>&copy; 2024 Quick Swimming</p>
+        <p>&copy; 2024 Quick Swimming Indonesia</p>
     </footer>
 
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click',
+    <script src="scripts.js"></script> <!-- Memuat JavaScript eksternal -->
+</body>
+</html>
