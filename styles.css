@@ -3,13 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Soft light blue background */
+    background: linear-gradient(to bottom, #ffffff, #004d99); /* Gradasi dari putih ke biru gelap */
     color: #333; /* Dark grey text */
 }
 
 header {
     background-color: #ffffff; /* White background */
-    color: #00796b; /* Teal text */
+    color: #004d99; /* Dark blue text */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,7 @@ header h1 {
     font-size: 1.5em;
     font-weight: bold;
     font-family: 'Merriweather', serif; /* Merriweather font */
+    font-style: italic; /* Italic */
 }
 
 header .header-right {
@@ -45,7 +46,7 @@ header .header-right {
 }
 
 #menu-toggle:hover {
-    background-color: #00796b; /* Darker teal */
+    background-color: #004d99; /* Dark blue */
 }
 
 #top-logo {
@@ -66,25 +67,30 @@ header .header-right {
     font-size: 2.5em;
     font-weight: bold;
     font-family: 'Merriweather', serif; /* Merriweather font */
+    font-style: italic; /* Italic */
 }
 
 #top-logo .highlight {
-    color: #00796b; /* Teal text for the "u" */
+    color: #004d99; /* Dark blue text for the "u" */
 }
 
 #top-logo h2 {
     font-size: 1.5em;
     font-weight: normal;
-    color: #00796b; /* Teal text */
+    color: #004d99; /* Dark blue text */
     margin-top: 10px;
+    font-style: italic; /* Italic */
 }
 
 nav {
-    display: none;
+    display: block;
     text-align: center;
     background-color: #ffffff; /* White background */
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -101,7 +107,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00796b; /* Teal */
+    color: #004d99; /* Dark blue */
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -120,7 +126,6 @@ nav ul li.search-icon a {
 section {
     padding: 50px 20px;
     text-align: center;
-    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/16/10/pool-1844079_960_720.jpg'); /* URL gambar kolam renang */
     background-size: cover;
     background-position: center;
     color: #ffffff; /* White text */
@@ -135,36 +140,29 @@ section::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 150, 136, 0.5); /* Teal overlay with 50% transparency */
+    background-color: rgba(0, 77, 153, 0.5); /* Blue overlay with 50% transparency */
     z-index: -1;
 }
 
 #articles {
-    background-color: rgba(255, 255, 255, 0.8); /* 80% transparent white background */
+    background-color: #ffffff; /* White background */
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     color: #333; /* Dark grey text */
+    border: 1px solid #ddd; /* Light grey border */
+}
+
+#articles article {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff; /* White background */
+    border-radius: 5px;
 }
 
 #article-content {
     margin-top: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* 90% transparent white background */
-    border: 1px solid #ccc;
-    color: #333; /* Dark grey text */
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-#article-content h2 {
-    font-size: 1.8em;
-    color: #00796b; /* Teal */
-    margin-bottom: 20px;
-}
-
-#article-content p,
-#article-content ul {
-    font-size: 1em
+    background-color: rgba(255, 255, 255
