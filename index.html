@@ -6,13 +6,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header-left h1 {
+            font-family: 'Merriweather', serif;
+            font-style: italic;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .header-right a.search-icon {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 1.4rem;
+        }
+        .main-logo {
+            max-width: 200px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+        }
+        #main-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f6f9; /* Warna latar belakang menu */
+            border-top: 2px solid #c1d5e0; /* Garis tepi atas */
+            border-bottom: 2px solid #c1d5e0; /* Garis tepi bawah */
+            padding: 10px 0;
+        }
+        #main-nav ul li {
+            margin: 0 10px;
+        }
+        #main-nav ul li a {
+            text-decoration: none;
+            color: #333333;
+            padding: 10px 15px;
+        }
+        #main-nav ul li a:hover {
+            background-color: #d9e8f2; /* Warna latar belakang saat hover */
+            border-radius: 5px;
+        }
+        #menu-dropdown {
+            display: none; /* Menu dropdown disembunyikan secara default */
+        }
+        #dropdown-menu {
+            display: none; /* Submenu juga disembunyikan secara default */
+            position: absolute;
+            background-color: #f0f6f9; /* Warna latar belakang submenu */
+            border: 1px solid #c1d5e0; /* Garis tepi submenu */
+            z-index: 1000;
+        }
+        #dropdown-menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #dropdown-menu ul li {
+            padding: 10px;
+        }
+        #home, #articles {
+            background: linear-gradient(to bottom, #ffffff, #c1d5e0); /* Gradasi dari putih ke biru muda soft */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #3498db; /* Warna latar belakang footer */
+            color: #ffffff; /* Warna teks footer */
+            text-align: center;
+            padding: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+        .social-icons {
+            margin-bottom: 10px;
+        }
+        .social-icon {
+            margin: 0 5px;
+        }
+    </style>
     <title>Quick Swimming Indonesia</title>
     <meta name="description" content="Quick Swimming menawarkan berbagai kursus renang untuk pemula dan profesional di Indonesia.">
 </head>
 <body>
     <header>
         <div class="header-left">
-            <h1 style="font-family: 'Merriweather', serif; font-style: italic;">Quick Swimming Indonesia</h1>
+            <h1>Quick Swimming</h1>
         </div>
         <div class="header-right">
             <button id="menu-toggle">&#9776;</button>
@@ -29,7 +122,7 @@
             <li><a href="index.html">Beranda</a></li>
             <li><a href="news.html">Berita</a></li>
             <li><a href="info.html">Info</a></li>
-            <li><a href="#" id="menu-dropdown">Menu</a>
+            <li><a href="#" id="menu-dropdown">Menu &#9662;</a>
                 <ul id="dropdown-menu">
                     <li><a href="about.html">Tentang Kami</a></li>
                     <li><a href="adart.html">AD/ART</a></li>
@@ -76,7 +169,7 @@
             <a href="https://wa.me/quickswimming" class="social-icon"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
             <a href="https://youtube.com/quickswimming" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
         </div>
-        <p style="color: #ffffff; text-align: center;">&copy; 2024 Quick Swimming</p>
+        <p>&copy; 2024 Quick Swimming</p>
     </footer>
 
     <script>
