@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Quick Swimming Indonesia</title>
@@ -11,51 +11,98 @@
 </head>
 <body>
     <header>
-        <h1>Quick Swimming Indonesia</h1>
+        <div class="header-left">
+            <h1 style="font-family: 'Merriweather', serif; font-style: italic;">Quick Swimming</h1>
+        </div>
         <div class="header-right">
             <button id="menu-toggle">&#9776;</button>
-            <input type="text" placeholder="Cari" class="search-icon">
-        </div>
-        <div id="dropdown-menu">
-            <ul>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Program Latihan</a></li>
-                <li><a href="#">Kepelatihan</a></li>
-                <li><a href="#">Galeri</a></li>
-                <li><a href="#">Kontak</a></li>
-                <li><a href="#">Bantuan</a></li>
-            </ul>
+            <a href="#" class="search-icon">&#128269;</a>
         </div>
     </header>
 
-    <nav>
+    <div id="top-logo">
+        <img src="https://raw.githubusercontent.com/QuickSwimming/Quick-Swimming/main/png_20230706_195346_0000.png" alt="Quick Swimming Logo" class="main-logo">
+    </div>
+
+    <nav id="main-nav">
         <ul>
             <li><a href="index.html">Beranda</a></li>
-            <li><a href="berita.html">Berita</a></li>
+            <li><a href="news.html">Berita</a></li>
             <li><a href="info.html">Info</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#" id="menu-dropdown">Menu</a>
+                <ul id="dropdown-menu">
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="adart.html">AD/ART</a></li>
+                    <li><a href="vision.html">Visi dan Misi</a></li>
+                    <li><a href="training.html">Program Pelatihan</a></li>
+                    <li><a href="coaches.html">Pelatih</a></li>
+                    <li><a href="registration.html">Pendaftaran</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="help.html">Bantuan</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
-    <section class="section">
+    <section id="home" class="section">
         <h2>Selamat datang di Quick Swimming Indonesia</h2>
         <p>Kami menawarkan berbagai kursus renang untuk pemula dan profesional di Indonesia, termasuk anak-anak, remaja, dewasa, dan lanjut usia.</p>
     </section>
 
-    <!-- Artikel dan bagian lainnya -->
-    
+    <section id="articles" class="section">
+        <h2>Artikel Terbaru</h2>
+        <div id="article-list">
+            <article>
+                <h3><a href="article1.html">Kenapa Memilih Quick Swimming Indonesia</a></h3>
+                <p>Baca mengapa Quick Swimming Indonesia adalah pilihan terbaik untuk kursus renang Anda.</p>
+            </article>
+            <article>
+                <h3><a href="article2.html">Pentingnya Olahraga Renang</a></h3>
+                <p>Temukan manfaat kesehatan dan kebugaran dari berenang secara teratur.</p>
+            </article>
+            <article>
+                <h3><a href="article3.html">Tips Memilih Tempat Belajar Renang yang Tepat</a></h3>
+                <p>Panduan untuk memilih sekolah renang yang sesuai untuk Anda atau keluarga Anda.</p>
+            </article>
+        </div>
+    </section>
+
     <footer>
         <div class="social-icons">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
-            <a href="#"><img src="maps-icon.png" alt="Maps"></a>
-            <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
-            <a href="#"><img src="email-icon.png" alt="Email"></a>
+            <a href="mailto:info@quickswimming.com" class="social-icon"><img src="email-icon.png" alt="Email"></a>
+            <a href="https://facebook.com/quickswimming" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://instagram.com/quickswimming" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://maps.google.com/quickswimming" class="social-icon"><img src="maps-icon.png" alt="Maps"></a>
+            <a href="https://wa.me/quickswimming" class="social-icon"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="https://youtube.com/quickswimming" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
         </div>
-        <p>&copy; 2024 Quick Swimming</p>
+        <p style="color: #ffffff; text-align: center;">&copy; 2024 Quick Swimming</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var dropdownMenu = document.getElementById('dropdown-menu');
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+            } else {
+                dropdownMenu.style.display = 'block';
+            }
+        });
+
+        // Ensure sub menu is always visible under the logo
+        window.addEventListener('resize', function() {
+            var dropdownMenu = document.getElementById('dropdown-menu');
+            if (window.innerWidth >= 768) {
+                dropdownMenu.style.display = 'block';
+            } else {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+
+        // Initial check to set sub menu visibility
+        if (window.innerWidth >= 768) {
+            document.getElementById('dropdown-menu').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
