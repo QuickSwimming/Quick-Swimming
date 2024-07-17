@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Quick Swimming Indonesia</title>
@@ -11,21 +12,11 @@
 <body>
     <header>
         <div class="header-left">
-            <h1 translate="no">Quick Swimming</h1>
+            <h1 style="font-family: 'Merriweather', serif; font-style: italic;">Quick Swimming</h1>
         </div>
         <div class="header-right">
-            <button id="menu-toggle">Menu</button>
-            <a href="search.html" class="search-icon">&#128269;</a>
-            <nav id="dropdown-menu" class="dropdown">
-                <ul>
-                    <li><a href="about.html">Info</a></li>
-                    <li><a href="program.html">Program Latihan</a></li>
-                    <li><a href="coaches.html">Kepelatihan</a></li>
-                    <li><a href="gallery.html">Galeri</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
-                    <li><a href="help.html">Bantuan</a></li>
-                </ul>
-            </nav>
+            <button id="menu-toggle">&#9776;</button>
+            <a href="#" class="search-icon">&#128269;</a>
         </div>
     </header>
 
@@ -38,15 +29,16 @@
             <li><a href="index.html">Beranda</a></li>
             <li><a href="news.html">Berita</a></li>
             <li><a href="info.html">Info</a></li>
+            <li><a href="#" id="menu-dropdown">Menu</a></li>
         </ul>
     </nav>
 
-    <section id="home">
+    <section id="home" class="section">
         <h2>Selamat datang di Quick Swimming Indonesia</h2>
         <p>Kami menawarkan berbagai kursus renang untuk pemula dan profesional di Indonesia, termasuk anak-anak, remaja, dewasa, dan lanjut usia.</p>
     </section>
 
-    <section id="articles">
+    <section id="articles" class="section">
         <h2>Artikel Terbaru</h2>
         <div id="article-list">
             <article>
@@ -73,7 +65,7 @@
             <a href="https://wa.me/quickswimming" class="social-icon"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
             <a href="https://youtube.com/quickswimming" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
         </div>
-        <p>&copy; 2024 Quick Swimming</p>
+        <p style="color: #ffffff; text-align: center;">&copy; 2024 Quick Swimming</p>
     </footer>
 
     <script>
