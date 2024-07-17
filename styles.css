@@ -13,7 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 a {
@@ -29,62 +29,28 @@ header {
     position: relative;
     z-index: 1000;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-left {
-    text-align: left;
-    flex: 1;
-    margin-left: 20px; /* Space between logo and edge of screen */
+    margin-top: 10px; /* Penyesuaian jarak logo dari atas */
 }
 
-.header-left h1 {
-    font-family: 'Merriweather', serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: white;
-    margin: 0;
-}
-
-.header-right {
-    text-align: right;
-    flex: 1;
-    margin-right: 20px; /* Space between menu icon and edge of screen */
-    position: relative; /* Added for positioning dropdown */
-}
-
-.header-right button#menu-toggle {
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-}
-
-.header-right a.search-icon {
-    margin-left: 10px;
-    font-size: 1.4rem;
-    color: white;
-}
-
-/* Logo and navigation styles */
-.main-logo {
+.header-left img {
     max-width: 200px;
     height: auto;
 }
 
-#main-nav {
-    background-color: #f0f6f9;
-    border-top: 2px solid #c1d5e0;
-    border-bottom: 2px solid #c1d5e0;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 60px;
-    z-index: 999;
-    display: none; /* Hidden by default */
+.header-right {
+    margin-top: 10px; /* Penyesuaian jarak menu dari atas */
 }
 
 #main-nav ul {
@@ -110,20 +76,15 @@ header {
     border-radius: 5px;
 }
 
-#menu-toggle {
-    display: none; /* Hidden by default */
-}
-
-/* Dropdown menu styles */
 #dropdown-menu {
     display: none;
     position: absolute;
     background-color: #f0f6f9;
     border: 1px solid #c1d5e0;
     z-index: 1000;
-    top: 100%;
+    top: 100%; /* Position dropdown below menu */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Center dropdown under menu icon */
 }
 
 #dropdown-menu ul {
@@ -134,15 +95,6 @@ header {
 
 #dropdown-menu ul li {
     padding: 10px;
-}
-
-#dropdown-menu ul li a {
-    color: #333;
-}
-
-#dropdown-menu ul li a:hover {
-    background-color: #d9e8f2;
-    border-radius: 5px;
 }
 
 /* Sections and articles styles */
@@ -189,4 +141,32 @@ footer {
 
 .social-icon {
     margin: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-left,
+    .header-right {
+        margin-top: 0;
+    }
+
+    .header-right {
+        margin-bottom: 10px; /* Penyesuaian jarak menu dari atas */
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+    }
+
+    #main-nav ul li {
+        margin: 5px 0;
+    }
+
+    #dropdown-menu {
+        top: 100%; /* Position dropdown below menu */
+    }
 }
