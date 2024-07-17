@@ -3,13 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #ffffff, #004d99); /* Gradasi dari putih ke biru gelap */
+    background: linear-gradient(to bottom, #ffffff, #001f3f); /* Gradasi dari putih ke biru gelap */
     color: #333; /* Dark grey text */
 }
 
 header {
-    background-color: #ffffff; /* White background */
-    color: #004d99; /* Dark blue text */
+    background-color: #004d99; /* Dark blue background */
+    color: #ffffff; /* White text */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -60,18 +60,6 @@ header .header-right {
     width: 70px;
     height: auto;
     vertical-align: middle;
-}
-
-#top-logo h1 {
-    display: inline;
-    font-size: 2.5em;
-    font-weight: bold;
-    font-family: 'Merriweather', serif; /* Merriweather font */
-    font-style: italic; /* Italic */
-}
-
-#top-logo .highlight {
-    color: #004d99; /* Dark blue text for the "u" */
 }
 
 #top-logo h2 {
@@ -162,7 +150,25 @@ section::before {
     border-radius: 5px;
 }
 
-#article-content {
-    margin-top: 20px;
+footer {
+    text-align: center;
+    background-color: #001f3f; /* Darker blue */
+    color: #ffffff; /* White text */
     padding: 20px;
-    background-color: rgba(255, 255, 255
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+footer a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display:
