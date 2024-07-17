@@ -1,27 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Toggle dropdown menu visibility
-    const menuToggle = document.getElementById("menu-toggle");
-    const dropdownMenu = document.getElementById("dropdown-menu");
-    const menuToggleBody = document.getElementById("menu-toggle-body");
-    const dropdownMenuBody = document.getElementById("dropdown-menu-body");
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const bodyMenuToggle = document.getElementById('menu-toggle-body');
+    const dropdownMenuBody = document.getElementById('dropdown-menu-body');
 
-    menuToggle.addEventListener("click", function(e) {
+    menuToggle.addEventListener('click', function (e) {
         e.preventDefault();
-        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
 
-    menuToggleBody.addEventListener("click", function(e) {
+    bodyMenuToggle.addEventListener('click', function (e) {
         e.preventDefault();
-        dropdownMenuBody.style.display = dropdownMenuBody.style.display === "block" ? "none" : "block";
+        dropdownMenuBody.style.display = dropdownMenuBody.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Hide dropdown menu when clicking outside
-    document.addEventListener("click", function(e) {
-        if (!menuToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-            dropdownMenu.style.display = "none";
+    document.addEventListener('click', function (e) {
+        if (!dropdownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            dropdownMenu.style.display = 'none';
         }
-        if (!menuToggleBody.contains(e.target) && !dropdownMenuBody.contains(e.target)) {
-            dropdownMenuBody.style.display = "none";
+        if (!dropdownMenuBody.contains(e.target) && !bodyMenuToggle.contains(e.target)) {
+            dropdownMenuBody.style.display = 'none';
         }
     });
 });
