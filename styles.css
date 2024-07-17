@@ -88,6 +88,7 @@ nav ul li a {
     text-decoration: none;
     color: #004d99; /* Teks biru gelap */
     font-weight: bold;
+    position: relative;
 }
 
 nav ul li a:hover {
@@ -95,37 +96,7 @@ nav ul li a:hover {
     background-color: #4db6ac; /* Teal muda */
 }
 
-.section {
-    background-color: #f5f5f5; /* Latar belakang abu-abu muda */
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-#article-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-#article-list article {
-    background-color: #ffffff; /* Latar belakang putih */
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
-}
-
-footer {
-    background-color: #0d47a1; /* Biru gelap */
-    color: #ffffff; /* Putih teks */
-    text-align: center;
-    padding: 20px;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icon {
-    display: inline-block;
-    margin: 0 10px;
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #e6f7ff; /*
