@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Quick Swimming Indonesia</title>
     <meta name="description" content="Quick Swimming menawarkan berbagai kursus renang untuk pemula dan profesional di Indonesia.">
 </head>
 <body>
+    <div id="top-logo">
+        <img src="https://raw.githubusercontent.com/QuickSwimming/Quick-Swimming/main/png_20230706_195346_0000.png" alt="Quick Swimming Logo" class="main-logo">
+        <h1><span class="highlight">uick Swimming Indonesia</span></h1>
+    </div>
+
     <header>
-        <img src="https://raw.githubusercontent.com/QuickSwimming/Quick-Swimming/main/png_20230706_195346_0000.png" alt="Quick Swimming Logo" class="logo">
-        <h1>Quick Swimming Indonesia</h1>
+        <div class="header-left">
+            <h1>Quick Swimming Indonesia</h1>
+        </div>
+        <div class="header-right">
+            <button id="menu-toggle">Menu</button>
+        </div>
     </header>
 
-    <nav>
+    <nav id="main-nav">
         <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="program.html">Program</a></li>
@@ -53,5 +62,16 @@
         <p>Hubungi kami di <a href="mailto:info@quickswimming.com">info@quickswimming.com</a></p>
         <p>&copy; 2024 Quick Swimming</p>
     </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var nav = document.getElementById('main-nav');
+            if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
