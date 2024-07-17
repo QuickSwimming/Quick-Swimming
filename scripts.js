@@ -1,15 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const dropdownMenu = document.getElementById('dropdown-menu');
-    const searchIcon = document.querySelector('.search-icon');
-    
-    // Toggle dropdown menu
-    menuToggle.addEventListener('click', function() {
-        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-    });
+// Ambil elemen-elemen yang diperlukan dari DOM
+const menuToggle = document.getElementById('menu-toggle');
+const dropdownMenu = document.getElementById('dropdown-menu');
 
-    // Example search functionality
-    searchIcon.addEventListener('click', function() {
-        alert('Fitur pencarian belum diimplementasikan.');
-    });
+// Tambahkan event listener untuk klik pada tombol menu
+menuToggle.addEventListener('click', function() {
+    // Toggle untuk menampilkan atau menyembunyikan dropdown menu
+    if (dropdownMenu.style.display === 'block') {
+        dropdownMenu.style.display = 'none';
+    } else {
+        dropdownMenu.style.display = 'block';
+    }
 });
