@@ -13,7 +13,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
-    font-weight: normal;
+    font-weight: bold; /* Make it bold */
+    font-style: italic; /* Make it italic */
 }
 
 a {
@@ -40,7 +41,6 @@ header {
 }
 
 .header-left h1 {
-    font-style: italic;
     font-size: 1.8rem;
     color: white;
     margin: 0;
@@ -167,14 +167,4 @@ footer {
     background-color: #3498db;
     color: white;
     text-align: center;
-    padding: 10px;
-    font-family: 'Nunito', sans-serif;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icon {
-    margin: 0 5px;
-}
+    padding: 10
