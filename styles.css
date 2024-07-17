@@ -99,4 +99,68 @@ nav ul li a:hover {
 #dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #e6f7ff; /*
+    background-color: #ffffff; /* Latar belakang putih */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    z-index: 1;
+}
+
+#dropdown-menu li {
+    width: 200px;
+}
+
+#dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Teks abu-abu gelap */
+}
+
+#dropdown-menu li a:hover {
+    background-color: #f0f0f0; /* Abun abu-abu muda */
+}
+
+.section {
+    background-color: #f0f0f0; /* Latar belakang abu-abu muda untuk section dan article */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center; /* Teks rata tengah */
+}
+
+#article-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#article-list article {
+    width: 30%;
+    background-color: #ffffff; /* Latar belakang putih untuk artikel */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+#article-list article h3 {
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #0d47a1; /* Latar belakang biru gelap */
+    color: #ffffff; /* Putih teks */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 5px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
