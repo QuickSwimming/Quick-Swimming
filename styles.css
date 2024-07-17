@@ -1,18 +1,4 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
-body {
-    font-family: 'Nunito', 'Courier New', monospace;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #ffffff, #001f3f); /* Gradasi dari putih ke biru gelap */
-    color: #333; /* Dark grey text */
-}
+/* CSS lainnya sesuai kebutuhan */
 
 header {
     background-color: #42a5f5; /* Warna biru langit */
@@ -31,7 +17,7 @@ header h1 {
     font-style: italic;
 }
 
-header .header-right {
+.header-right {
     display: flex;
     align-items: center;
 }
@@ -45,122 +31,31 @@ header .header-right {
     margin-right: 10px; /* Jarak dari kanan ikon pencarian */
 }
 
-.search-icon {
-    color: #ffffff; /* Putih teks */
-    font-size: 1.5em; /* Ukuran font lebih besar */
-    text-decoration: none;
-}
-
-#top-logo {
-    text-align: center;
-    background-color: #f5f5f5; /* Latar belakang abu-abu muda */
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
-    margin-top: 20px; /* Spasi dari header */
-}
-
-#top-logo .main-logo {
-    width: 70px;
-    height: auto;
-    vertical-align: middle;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e6f7ff; /* Latar belakang biru muda */
-    color: #004d99; /* Teks biru gelap */
-    padding: 10px 0;
-    margin-top: 20px; /* Spasi dari top-logo */
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #004d99; /* Teks biru gelap */
-    font-weight: bold;
-    position: relative;
-}
-
-nav ul li a:hover {
-    color: #ffffff; /* Putih teks */
-    background-color: #4db6ac; /* Teal muda */
-}
-
 #dropdown-menu {
-    display: none;
+    display: none; /* Menu dropdown awalnya disembunyikan */
     position: absolute;
+    top: 60px; /* Sesuaikan jarak dropdown dari header */
+    right: 15px; /* Sesuaikan posisi horizontal dropdown */
     background-color: #ffffff; /* Latar belakang putih */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
     z-index: 1;
 }
 
+#dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
 #dropdown-menu li {
-    width: 200px;
+    padding: 10px;
 }
 
 #dropdown-menu li a {
-    display: block;
-    padding: 10px;
     text-decoration: none;
     color: #333; /* Teks abu-abu gelap */
+    font-weight: bold;
 }
 
 #dropdown-menu li a:hover {
     background-color: #f0f0f0; /* Abun abu-abu muda */
-}
-
-.section {
-    background-color: #f0f0f0; /* Latar belakang abu-abu muda untuk section dan article */
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center; /* Teks rata tengah */
-}
-
-#article-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#article-list article {
-    width: 30%;
-    background-color: #ffffff; /* Latar belakang putih untuk artikel */
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
-}
-
-#article-list article h3 {
-    font-size: 1.2em;
-}
-
-footer {
-    background-color: #0d47a1; /* Latar belakang biru gelap */
-    color: #ffffff; /* Putih teks */
-    text-align: center;
-    padding: 20px 0;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icon {
-    margin: 0 5px;
-}
-
-.social-icon img {
-    width: 30px;
-    height: auto;
-    vertical-align: middle;
 }
