@@ -1,102 +1,172 @@
-/* Reset default styles */
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global styles */
+/* General styles */
 body {
-    font-family: 'Nunito', 'Courier New', monospace;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #ffffff, #001f3f); /* Gradasi dari putih ke biru gelap */
-    color: #333; /* Dark grey text */
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header styles */
 header {
-    background-color: #42a5f5; /* Warna biru langit */
-    color: #ffffff; /* Putih teks */
-    padding: 15px;
+    background: linear-gradient(to bottom right, #1e90ff, #ffffff, #ff0000);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-family: 'Merriweather', serif;
+.header-left {
+    text-align: left;
+    flex: 1;
+    margin-left: 20px; /* Space between logo and edge of screen */
+}
+
+.header-left h1 {
     font-style: italic;
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
 }
 
-header .header-right {
-    display: flex;
-    align-items: center;
+.header-right {
+    text-align: right;
+    flex: 1;
+    margin-right: 20px; /* Space between menu icon and edge of screen */
 }
 
-#menu-toggle {
-    background-color: transparent; /* Latar belakang transparan */
+.header-right button#menu-toggle {
+    background-color: transparent;
     border: none;
-    color: #ffffff; /* Putih teks */
-    font-size: 1.5em; /* Ukuran font */
+    font-size: 1.5rem;
+    color: white;
     cursor: pointer;
-    margin-right: 10px; /* Jarak dari kanan ikon pencarian */
 }
 
-.search-icon {
-    color: #ffffff; /* Putih teks */
-    font-size: 1.5em; /* Ukuran font lebih besar */
-    text-decoration: none;
+.header-right a.search-icon {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: white;
 }
 
-#top-logo {
-    text-align: center;
-    background-color: #f5f5f5; /* Latar belakang abu-abu muda */
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
-    margin-top: 20px; /* Spasi dari header */
-}
-
-#top-logo .main-logo {
-    width: 70px;
+/* Logo and navigation styles */
+.main-logo {
+    max-width: 200px;
     height: auto;
-    vertical-align: middle;
 }
 
-nav {
+#main-nav {
+    background-color: #f0f6f9;
+    border-top: 2px solid #c1d5e0;
+    border-bottom: 2px solid #c1d5e0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+    display: none; /* Hidden by default */
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #e6f7ff; /* Latar belakang biru muda */
-    color: #004d99; /* Teks biru gelap */
-    padding: 10px 0;
-    margin-top: 20px; /* Spasi dari top-logo */
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
+#main-nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #004d99; /* Teks biru gelap */
-    font-weight: bold;
-    position: relative;
+#main-nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333333;
 }
 
-nav ul li a:hover {
-    color: #ffffff; /* Putih teks */
-    background-color: #4db6ac; /* Teal muda */
+#main-nav ul li a:hover {
+    background-color: #d9e8f2;
+    border-radius: 5px;
 }
 
 #dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #e6f7ff; /*
+    background-color: #f0f6f9;
+    border: 1px solid #c1d5e0;
+    z-index: 1000;
+}
+
+#dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown-menu ul li {
+    padding: 10px;
+}
+
+/* Sections and articles styles */
+.section {
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #c1d5e0);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 5px;
+}
