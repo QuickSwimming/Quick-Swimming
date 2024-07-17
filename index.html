@@ -13,7 +13,7 @@
     <header>
         <div class="header-top">
             <div class="header-left">
-                <img src="logo.png" alt="Quick Swimming Indonesia" class="main-logo">
+                <img src="https://github.com/QuickSwimming/Quick-Swimming/blob/main/png_20230706_195346_0000.png?raw=true" alt="Quick Swimming Indonesia" class="main-logo">
             </div>
             <div class="header-right">
                 <nav id="main-nav">
@@ -37,6 +37,29 @@
         </div>
     </header>
 
+    <section id="logo-menu" class="section">
+        <div class="logo-menu-container">
+            <img src="https://github.com/QuickSwimming/Quick-Swimming/blob/main/png_20230706_195346_0000.png?raw=true" alt="Quick Swimming Indonesia" class="logo-body">
+            <nav id="body-nav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="news.html">Berita</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="#" id="menu-toggle-body">Menu &#9776;</a></li>
+                </ul>
+                <ul id="dropdown-menu-body">
+                    <li><a href="about.html">Profil Klub</a></li>
+                    <li><a href="adart.html">AD/ART</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="coaches.html">Pelatih</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="help.html">Bantuan</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
     <section id="home" class="section">
         <h2>Selamat datang di Quick Swimming Indonesia</h2>
         <p>Kami menawarkan berbagai kursus renang untuk pemula dan profesional di Indonesia, termasuk anak-anak, remaja, dewasa, dan lanjut usia.</p>
@@ -44,19 +67,13 @@
 
     <section id="articles" class="section">
         <h2>Artikel Terbaru</h2>
-        <div id="article-list">
-            <article>
-                <h3><a href="article1.html">Kenapa Memilih Quick Swimming Indonesia</a></h3>
-                <p>Baca mengapa Quick Swimming Indonesia adalah pilihan terbaik untuk kursus renang Anda.</p>
-            </article>
-            <article>
-                <h3><a href="article2.html">Pentingnya Olahraga Renang</a></h3>
-                <p>Temukan manfaat kesehatan dan kebugaran dari berenang secara teratur.</p>
-            </article>
-            <article>
-                <h3><a href="article3.html">Tips Memilih Tempat Belajar Renang yang Tepat</a></h3>
-                <p>Panduan untuk memilih sekolah renang yang sesuai untuk Anda atau keluarga Anda.</p>
-            </article>
+        <div id="dropdown-articles">
+            <select onchange="window.location.href=this.value;">
+                <option value="">Pilih artikel...</option>
+                <option value="article1.html">Kenapa Memilih Quick Swimming Indonesia</option>
+                <option value="article2.html">Pentingnya Olahraga Renang</option>
+                <option value="article3.html">Tips Memilih Tempat Belajar Renang yang Tepat</option>
+            </select>
         </div>
     </section>
 
