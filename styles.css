@@ -145,7 +145,14 @@ nav ul li.search-icon a {
 section {
     padding: 50px 20px;
     text-align: center;
-    background-size: cover;
-    background-position: center;
-    color: #ffffff; /* White text */
-    position: relative;
+    color: #333; /* Dark grey text */
+    background: #ffffff; /* White background */
+}
+
+#articles #article-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#articles article {
