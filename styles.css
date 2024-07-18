@@ -96,12 +96,12 @@ header {
 }
 
 #dropdown-menu-body {
-    display: none;
+    display: none; /* Pastikan ini ada */
     position: absolute;
     background-color: #f0f6f9;
     border: 1px solid #c1d5e0;
     z-index: 1000;
-    top: 150px; /* Adjust the position of the dropdown */
+    top: 50px; /* Adjust the position of the dropdown */
     left: 50%; /* Position dropdown below the menu */
     transform: translateX(-50%); /* Center the dropdown */
     padding: 10px;
@@ -155,4 +155,4 @@ footer {
     background-color: #87ceeb; /* Warna biru langit */
     padding: 20px;
     font-family: 'Nunito', sans-serif;
-    font-size: 0.9rem
+    font-size:
