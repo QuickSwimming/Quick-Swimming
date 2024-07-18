@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const bodyMenuToggle = document.getElementById('menu-toggle-body');
     const dropdownMenuBody = document.getElementById('dropdown-menu-body');
 
-    // Pastikan menu disembunyikan saat halaman dimuat
+    // Ensure the dropdown menus are hidden on page load
     dropdownMenu.style.display = 'none';
     dropdownMenuBody.style.display = 'none';
 
