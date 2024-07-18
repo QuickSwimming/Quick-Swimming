@@ -24,7 +24,7 @@ a {
 
 /* Header styles */
 header {
-    background-color: #87ceeb; /* Warna biru langit */
+    background-color: #003366; /* Warna biru */
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
@@ -87,7 +87,7 @@ header {
 
 /* Logo and menu styles */
 .logo-menu-container {
-    background-color: #f0f6f9;
+    background-color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
