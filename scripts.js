@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const bodyMenuToggle = document.getElementById('menu-toggle-body');
     const dropdownMenuBody = document.getElementById('dropdown-menu-body');
 
+    // Pastikan menu disembunyikan saat halaman dimuat
+    dropdownMenu.style.display = 'none';
+    dropdownMenuBody.style.display = 'none';
+
     menuToggle.addEventListener('click', function (e) {
         e.preventDefault();
         dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
