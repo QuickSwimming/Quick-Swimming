@@ -57,6 +57,34 @@ header {
     margin-left: 10px;
 }
 
+/* Dropdown menu styles */
+#dropdown-menu {
+    display: none; /* Hide dropdown menu by default */
+    position: absolute;
+    background-color: #f0f6f9;
+    border: 1px solid #c1d5e0;
+    z-index: 1000;
+    top: 50px; /* Adjust the position of the dropdown */
+    right: 10px; /* Position dropdown to the right */
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+}
+
+#dropdown-menu li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+#dropdown-menu li a {
+    color: #333;
+}
+
+#dropdown-menu li a:hover {
+    background-color: #d9e8f2;
+    border-radius: 5px;
+}
+
 /* Logo and menu styles */
 .logo-menu-container {
     background-color: #f0f6f9;
@@ -95,22 +123,33 @@ header {
     border-radius: 5px;
 }
 
+/* Dropdown menu body styles */
 #dropdown-menu-body {
-    display: none; /* Pastikan ini ada */
+    display: none; /* Hide dropdown menu body by default */
     position: absolute;
     background-color: #f0f6f9;
     border: 1px solid #c1d5e0;
     z-index: 1000;
-    top: 50px; /* Adjust the position of the dropdown */
+    top: 150px; /* Adjust the position of the dropdown */
     left: 50%; /* Position dropdown below the menu */
     transform: translateX(-50%); /* Center the dropdown */
     padding: 10px;
     width: 200px;
+    text-align: left;
 }
 
 #dropdown-menu-body li {
     list-style-type: none;
     padding: 10px 0;
+}
+
+#dropdown-menu-body li a {
+    color: #333;
+}
+
+#dropdown-menu-body li a:hover {
+    background-color: #d9e8f2;
+    border-radius: 5px;
 }
 
 /* Section and articles styles */
@@ -155,4 +194,20 @@ footer {
     background-color: #87ceeb; /* Warna biru langit */
     padding: 20px;
     font-family: 'Nunito', sans-serif;
-    font-size:
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
