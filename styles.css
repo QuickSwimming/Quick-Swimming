@@ -9,6 +9,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     text-align: center;
+    background: linear-gradient(to bottom, #FFFFF0, #E3F2FD); /* Gradasi kuning ke biru muda */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,65 +25,14 @@ a {
 
 /* Header styles */
 header {
-    background-color: #003366; /* Warna biru */
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(to right, #FFEB3B, #FF9800); /* Gradasi kuning ke oranye */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.header-left h1 {
-    font-family: 'Merriweather', serif;
-    font-style: italic;
-    font-weight: bold;
-    color: #ffffff; /* white */
-    margin: 0;
-    font-size: 2rem; /* Header font size should be the largest */
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-}
-
-.header-right button, .header-right .search-icon {
-    font-size: 1.5rem;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-/* Dropdown menu styles */
-#dropdown-menu {
-    display: none; /* Hide dropdown menu by default */
-    position: absolute;
-    background-color: #f0f6f9;
-    border: 1px solid #c1d5e0;
-    z-index: 1000;
-    top: 50px; /* Adjust the position of the dropdown */
-    right: 10px; /* Position dropdown to the right */
-    padding: 10px;
-    width: 200px;
-    text-align: left;
-}
-
-#dropdown-menu li {
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-#dropdown-menu li a {
-    color: #333;
-}
-
-#dropdown-menu li a:hover {
-    background-color: #d9e8f2;
-    border-radius: 5px;
+header h1 {
+    font-size: 2.5rem; /* Lebih besar untuk tampilan yang lebih menonjol */
 }
 
 /* Logo and menu styles */
@@ -123,31 +73,39 @@ header {
     border-radius: 5px;
 }
 
-/* Dropdown menu body styles */
-#dropdown-menu-body {
-    display: none; /* Hide dropdown menu body by default */
+/* Dropdown menu styles */
+#dropdown-menu, #dropdown-menu-body {
+    display: none; /* Hide dropdown menu by default */
     position: absolute;
     background-color: #f0f6f9;
     border: 1px solid #c1d5e0;
     z-index: 1000;
-    top: 150px; /* Adjust the position of the dropdown */
-    left: 50%; /* Position dropdown below the menu */
-    transform: translateX(-50%); /* Center the dropdown */
     padding: 10px;
     width: 200px;
     text-align: left;
 }
 
-#dropdown-menu-body li {
+#dropdown-menu {
+    top: 50px; /* Adjust the position of the dropdown */
+    right: 10px; /* Position dropdown to the right */
+}
+
+#dropdown-menu-body {
+    top: 150px; /* Adjust the position of the dropdown */
+    left: 50%; /* Position dropdown below the menu */
+    transform: translateX(-50%); /* Center the dropdown */
+}
+
+#dropdown-menu li, #dropdown-menu-body li {
     list-style-type: none;
     padding: 10px 0;
 }
 
-#dropdown-menu-body li a {
+#dropdown-menu li a, #dropdown-menu-body li a {
     color: #333;
 }
 
-#dropdown-menu-body li a:hover {
+#dropdown-menu li a:hover, #dropdown-menu-body li a:hover {
     background-color: #d9e8f2;
     border-radius: 5px;
 }
@@ -171,43 +129,58 @@ header {
 article {
     width: 80%; /* Adjust width to fit better in a single column */
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px; /* Larger padding for better readability */
     background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left; /* Align text to the left for better readability */
 }
 
 article h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    color: #FF9800; /* Warna oranye untuk judul artikel */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 article p {
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: #333; /* Warna teks */
 }
 
 /* Footer styles */
 footer {
-    background-color: #87ceeb; /* Warna biru langit */
+    background: #FF9800; /* Warna oranye */
+    color: white;
     padding: 20px;
-    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
     font-size: 0.9rem;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+/* Additional styles for article page */
+.article-page header {
+    background: linear-gradient(to right, #FFEB3B, #FF9800); /* Gradasi kuning ke oranye */
 }
 
-.social-icon {
-    margin: 0 10px;
+.article-page article {
+    background: #FFFFFF; /* Putih untuk artikel */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left; /* Align text to the left for better readability */
 }
 
-.social-icon img {
-    width: 24px;
-    height: 24px;
+.article-page article h3 {
+    color: #FF9800; /* Warna oranye untuk judul artikel */
+}
+
+.article-page article p {
+    font-size: 1rem;
+    color: #333; /* Warna teks */
 }
