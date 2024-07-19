@@ -127,60 +127,34 @@ header h1 {
 }
 
 article {
-    width: 80%; /* Adjust width to fit better in a single column */
-    margin-bottom: 20px;
-    padding: 20px; /* Larger padding for better readability */
+    width: 90%; /* Adjust width to fit better in a single column */
+    margin: 20px auto;
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: left; /* Align text to the left for better readability */
 }
 
-article h3 {
+article h1 {
     color: #FF9800; /* Warna oranye untuk judul artikel */
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
-article p {
+article p, article ul {
     font-size: 1rem;
     color: #333; /* Warna teks */
+    line-height: 1.6;
 }
 
-/* Footer styles */
-footer {
-    background: #FF9800; /* Warna oranye */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+article ul {
+    padding-left: 20px; /* Memberi jarak untuk list */
+    margin-top: 10px;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+article ul li {
+    margin-bottom: 10px;
 }
 
-/* Additional styles for article page */
-.article-page header {
-    background: linear-gradient(to right, #FFEB3B, #FF9800); /* Gradasi kuning ke oranye */
-}
-
-.article-page article {
-    background: #FFFFFF; /* Putih untuk artikel */
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    text-align: left; /* Align text to the left for better readability */
-}
-
-.article-page article h3 {
-    color: #FF9800; /* Warna oranye untuk judul artikel */
-}
-
-.article-page article p {
-    font-size: 1rem;
-    color: #333; /* Warna teks */
-}
+/*
